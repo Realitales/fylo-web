@@ -9,11 +9,15 @@ interface CardProps {
 
 export const Card = ({ img, message, from, title }: CardProps) => {
   return (
-    <div>
-      <img src={img} alt="" />
-      <p>{message}</p>
-      <h1>{from}</h1>
-      <h2>{title}</h2>
+    <div className="bg-dark-blue-4 p-5 rounded-md">
+      <p className="font-open-sans text-sm text-neutral-white">{message}</p>
+      <div className="flex mt-4 gap-2 items-center">
+        <img src={img} alt="profile-img" className="w-9 h-9 rounded-full" />
+        <div className="flex flex-col text-neutral-white">
+          <h1 className="font-bold font-raleway text-sm">{from}</h1>
+          <h2 className="text-sm">{title}</h2>
+        </div>
+      </div>
     </div>
   );
 };
