@@ -10,14 +10,14 @@ import bgcurvemobile from "../assets/bg-curvy-mobile.svg";
 
 export const Landing = () => {
   return (
-    <div className="h-[5em] ">
+    <div className="">
       <Navbar />
-      <div className="text-center mt-5 flex flex-col">
+      <div className="text-center mt-5 flex flex-col h-full justify-evenly">
         <div
-          className="bg-no-repeat bg-bottom flex flex-col "
+          className="bg-no-repeat bg-bottom flex flex-col gap-7"
           style={{
             backgroundImage: `url(${bgcurvemobile})`,
-            backgroundSize: "120%",
+            backgroundSize: "100%",
           }}
         >
           <img
@@ -35,7 +35,7 @@ export const Landing = () => {
             Access them wherever you need, share and collaborate with friends,
             family, and co-workers.
           </p>
-          <Button className="mt-5 ">Get Started</Button>
+          <Button className="mt-5">Get Started</Button>
         </div>
       </div>
     </div>

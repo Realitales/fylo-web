@@ -1,9 +1,9 @@
-interface NavigationType {
+interface RoutesType {
   name: string;
   path: string;
 }
 
-export const navigations: NavigationType[] = [
+export const routes: RoutesType[] = [
   {
     name: "features",
     path: "/features",
@@ -18,4 +18,4 @@ export const navigations: NavigationType[] = [
   },
 ];
 
-export default navigations;
+export default routes;
