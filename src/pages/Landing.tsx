@@ -35,7 +35,7 @@ export const Landing = () => {
             Access them wherever you need, share and collaborate with friends,
             family, and co-workers.
           </p>
-          <Button className="mt-5">Get Started</Button>
+          <Button className="mt-5 px-20 py-4">Get Started</Button>
         </div>
       </div>
     </div>

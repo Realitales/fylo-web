@@ -1,47 +1,87 @@
 import React from "react";
-import logo from "../assets/logo.svg";
+import Button from "./Button";
 
 //icons
 import locationICON from "../assets/icon-location.svg";
 import phoneICON from "../assets/icon-phone.svg";
 import emailICON from "../assets/icon-email.svg";
+import logo from "../assets/logo.svg";
+import { FaFacebookF } from "react-icons/fa";
+import { AiOutlineTwitter } from "react-icons/ai";
+import { AiOutlineInstagram } from "react-icons/ai";
+
+const Card = () => {
+  return (
+    <div className="px-5 py-10 bg-dark-blue-1 flex flex-col items-center rounded-md gap-5 text-neutral-white absolute  w-80 translate-x-1/2 left-0 -translate-y-24">
+      <h1 className="font-bold font-raleway">Get early access today</h1>
+      <p className="text-center text-sm">
+        It only takes a minute to sign up and our free starter tier is extremely
+        generous. If you have any question, our support team would be happy to
+        help you.
+      </p>
+      <input
+        type="text"
+        className="bg-neutral-white p-3 rounded-3xl text-xs w-full"
+        placeholder="email@example.com"
+      />
+      <Button className="px-5 py-3 w-full">Get started for free</Button>
+    </div>
+  );
+};
 
 export const Footer = () => {
   return (
-    <div className="bg-dark-blue-3 py-5 px-8 font-open-sans">
-      <img src={logo} alt="fylo-logo" className="w-44" />
-      <div className="text-neutral-white text-sm  mt-9 mr-5 flex flex-col gap-5">
-        <div className="flex gap-6">
-          <img src={locationICON} alt="location-icon" className="w-4 h-full" />
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua
-          </p>
+    <>
+      <Card />
+      <div className="bg-dark-blue-3 px-8 font-open-sans pt-72">
+        <img src={logo} alt="fylo-logo" className="w-44" />
+        <div className="text-neutral-white text-sm  mt-9 mr-5 flex flex-col gap-5">
+          <div className="flex gap-6">
+            <img
+              src={locationICON}
+              alt="location-icon"
+              className="w-4 h-full"
+            />
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua
+            </p>
+          </div>
+          <div className="flex gap-6">
+            <img src={phoneICON} alt="phone-icon" className="w-4 h-full" />
+            <p>+1-543-123-4567</p>
+          </div>
+          <div className="flex gap-6">
+            <img src={emailICON} alt="email-icon" className="w-4 h-full" />
+            <p>example@fylo.com</p>
+          </div>
         </div>
-        <div className="flex gap-6">
-          <img src={phoneICON} alt="phone-icon" className="w-4 h-full" />
-          <p>+1-543-123-4567</p>
+        <div className="flex flex-col gap-14 mt-20 text-neutral-white">
+          <div className="flex flex-col gap-5">
+            <p>About us</p>
+            <p>Jobs</p>
+            <p>Press</p>
+            <p>Blog</p>
+          </div>
+          <div className="flex flex-col gap-5">
+            <p>Contact Us</p>
+            <p>Terms</p>
+            <p>Privacy</p>
+          </div>
         </div>
-        <div className="flex gap-6">
-          <img src={emailICON} alt="email-icon" className="w-4 h-full" />
-          <p>example@fylo.com</p>
+        <div className="flex gap-5 p-10 justify-center">
+          <div className="border-neutral-white border-solid border-2 p-2 rounded-full">
+            <FaFacebookF className="text-neutral-white" />
+          </div>
+          <div className="border-neutral-white border-solid border-2 p-2 rounded-full">
+            <AiOutlineTwitter className="text-neutral-white" />
+          </div>
+          <div className="border-neutral-white border-solid border-2 p-2 rounded-full">
+            <AiOutlineInstagram className="text-neutral-white" />
+          </div>
         </div>
       </div>
-      <div className="flex flex-col gap-14 mt-20 text-neutral-white">
-        <div className="flex flex-col gap-5">
-          <p>About us</p>
-          <p>Jobs</p>
-          <p>Press</p>
-          <p>Blog</p>
-        </div>
-        <div className="flex flex-col gap-5">
-          <p>Contact Us</p>
-          <p>Terms</p>
-          <p>Privacy</p>
-        </div>
-      </div>
-      <div></div>
-    </div>
+    </>
   );
 };
 
