@@ -7,7 +7,7 @@ import quotesICON from "../assets/bg-quotes.png";
 //feedbacks
 import feedbacks from "../utils/feedbacks";
 
-export const Reference = () => {
+export const Feedback = () => {
   return (
     <div className="bg-dark-blue-2 px-5 pb-20">
       <img src={quotesICON} className="w-8 ml-3" alt="quotes-icon" />
@@ -25,4 +25,4 @@ export const Reference = () => {
   );
 };
 
-export default Reference;
+export default Feedback;
