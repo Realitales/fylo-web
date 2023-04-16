@@ -12,9 +12,11 @@ import { AiOutlineInstagram } from "react-icons/ai";
 
 const Card = () => {
   return (
-    <div className="px-5 py-10 bg-dark-blue-1 flex flex-col items-center rounded-md gap-5 text-neutral-white absolute  w-80 left-1/2 -translate-x-1/2  -translate-y-24">
-      <h1 className="font-bold font-raleway">Get early access today</h1>
-      <p className="text-center text-sm">
+    <div className="px-5 py-10 bg-dark-blue-1 flex flex-col items-center rounded-md gap-5  absolute  w-80 left-1/2 -translate-x-1/2  -translate-y-24">
+      <h1 className="font-bold font-raleway text-neutral-white">
+        Get early access today
+      </h1>
+      <p className="text-center text-sm text-neutral-white">
         It only takes a minute to sign up and our free starter tier is extremely
         generous. If you have any question, our support team would be happy to
         help you.

@@ -13,12 +13,14 @@ export const Feedback = () => {
       <img src={quotesICON} className="w-8 ml-3" alt="quotes-icon" />
       <div className="flex flex-col gap-7">
         {feedbacks.map((feedback) => (
-          <Card
-            img={feedback.image}
-            from={feedback.from}
-            message={feedback.message}
-            title={feedback.title}
-          />
+          <div key={feedback.from}>
+            <Card
+              img={feedback.image}
+              from={feedback.from}
+              message={feedback.message}
+              title={feedback.title}
+            />
+          </div>
         ))}
       </div>
     </div>
