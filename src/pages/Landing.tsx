@@ -6,8 +6,8 @@ import Navbar from "../components/Navbar";
 import Button from "../components/Button";
 
 //images
-import illustration1 from "../assets/illustration-intro.png";
-import bgcurvemobile from "../assets/bg-curvy-mobile.svg";
+import illustration1 from "/assets/illustration-intro.png";
+import bgcurvemobile from "/assets/bg-curvy-mobile.svg";
 
 export const Landing = () => {
   return (

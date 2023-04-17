@@ -1,6 +1,6 @@
 import React from "react";
 
-import bannerIMG from "../assets/illustration-stay-productive.png";
+import bannerIMG from "/assets/illustration-stay-productive.png";
 import arrowICON from "../assets/icon-arrow.svg";
 
 export const Productive = () => {
