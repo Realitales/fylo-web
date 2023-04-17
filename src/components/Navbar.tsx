@@ -7,7 +7,11 @@ export const Navbar = () => {
       <img src={logo} alt="fylo-logo" className="w-24" />
       <ul className="flex gap-5 text-xs ">
         {routes.map((route) => {
-          return <li key={route.path}>{route.name}</li>;
+          return (
+            <li key={route.path} className="cursor-pointer">
+              {route.name}
+            </li>
+          );
         })}
       </ul>
     </nav>
