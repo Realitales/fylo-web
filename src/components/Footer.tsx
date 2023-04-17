@@ -66,27 +66,36 @@ export const Footer = () => {
         </div>
         <div className="flex flex-col gap-14 mt-20 text-neutral-white">
           <div className="flex flex-col gap-5">
-            <p>About us</p>
-            <p>Jobs</p>
-            <p>Press</p>
-            <p>Blog</p>
+            <a href="#">About us</a>
+            <a href="#">Jobs</a>
+            <a href="#">Press</a>
+            <a href="#">Blog</a>
           </div>
           <div className="flex flex-col gap-5">
-            <p>Contact Us</p>
-            <p>Terms</p>
-            <p>Privacy</p>
+            <a href="#">Contact Us</a>
+            <a href="#">Terms</a>
+            <a href="#">Privacy</a>
           </div>
         </div>
         <div className="flex gap-5 p-10 justify-center">
-          <div className="border-neutral-white border-solid border-2 p-2 rounded-full">
+          <a
+            href="#"
+            className="border-neutral-white border-solid border-2 p-2 rounded-full"
+          >
             <FaFacebookF className="text-neutral-white" />
-          </div>
-          <div className="border-neutral-white border-solid border-2 p-2 rounded-full">
+          </a>
+          <a
+            href="#"
+            className="border-neutral-white border-solid border-2 p-2 rounded-full"
+          >
             <AiOutlineTwitter className="text-neutral-white" />
-          </div>
-          <div className="border-neutral-white border-solid border-2 p-2 rounded-full">
+          </a>
+          <a
+            href="#"
+            className="border-neutral-white border-solid border-2 p-2 rounded-full"
+          >
             <AiOutlineInstagram className="text-neutral-white" />
-          </div>
+          </a>
         </div>
       </div>
     </>
