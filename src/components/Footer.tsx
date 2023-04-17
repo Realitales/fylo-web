@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from "framer-motion";
 import Button from "./Button";
 
 //icons
@@ -10,9 +11,14 @@ import { FaFacebookF } from "react-icons/fa";
 import { AiOutlineTwitter } from "react-icons/ai";
 import { AiOutlineInstagram } from "react-icons/ai";
 
-const Card = () => {
+const FooterCard = () => {
   return (
-    <div className="px-5 py-10 bg-dark-blue-1 flex flex-col items-center rounded-md gap-5  absolute  w-80 left-1/2 -translate-x-1/2  -translate-y-24">
+    <motion.div
+      initial={{ y: "-2em", x: "-50%", opacity: 0 }}
+      whileInView={{ y: "-6rem", opacity: 1 }}
+      transition={{ type: "spring", stiffness: 70 }}
+      className="px-5 py-10 bg-dark-blue-1 flex flex-col items-center rounded-md gap-5  absolute  w-80 left-1/2 "
+    >
       <h1 className="font-bold font-raleway text-neutral-white">
         Get early access today
       </h1>
@@ -27,14 +33,14 @@ const Card = () => {
         placeholder="email@example.com"
       />
       <Button className="px-5 py-3 w-full">Get started for free</Button>
-    </div>
+    </motion.div>
   );
 };
 
 export const Footer = () => {
   return (
     <>
-      <Card />
+      <FooterCard />
       <div className="bg-dark-blue-3 px-8 font-open-sans pt-72">
         <img src={logo} alt="fylo-logo" className="w-44" />
         <div className="text-neutral-white text-sm  mt-9 mr-5 flex flex-col gap-5">
