@@ -1,9 +1,9 @@
-interface RoutesType {
+interface Route {
   name: string;
   path: string;
 }
 
-export const routes: RoutesType[] = [
+export const routes: Route[] = [
   {
     name: "features",
     path: "/features",
