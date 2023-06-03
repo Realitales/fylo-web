@@ -18,7 +18,7 @@ export default {
       "open-sans": ["Open Sans", "sans-serif"],
     },
     screens: {
-      tablet: "640px",
+      tablet: { min: "640px", max: "1020px" },
       // => @media (min-width: 640px) { ... }
 
       laptop: "1024px",

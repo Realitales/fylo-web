@@ -7,13 +7,13 @@ import Footer from "./components/Footer";
 
 const App = () => {
   return (
-    <div className="">
+    <>
       <Landing />
       <Perks />
       <Productive />
       <Feedback />
       <Footer />
-    </div>
+    </>
   );
 };
 
