@@ -1,8 +1,8 @@
 import { motion } from "framer-motion";
 
 //components
-import Navbar from "../components/Navbar";
-import Button from "../components/Button";
+import Navbar from "@/components/Navbar";
+import Button from "@/components/Button";
 
 //images
 import illustration1 from "/assets/illustration-intro.png";
