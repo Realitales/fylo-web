@@ -7,9 +7,9 @@ export const Navbar = () => {
       <img
         src={logo}
         alt="fylo-logo"
-        className="w-24 tablet:w-36 laptop:w-40 desktop:w-44"
+        className="w-24 tablet:w-28 laptop:w-28 desktop:w-32"
       />
-      <ul className="flex gap-5 text-xs tablet:text-lg laptop:text-base laptop:gap-16 ">
+      <ul className="flex gap-5 text-xs tablet:text-sm laptop:text-sm laptop:gap-16 ">
         {routes.map((route) => {
           return (
             <li key={route.path} className="cursor-pointer">
