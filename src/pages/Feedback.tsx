@@ -10,9 +10,9 @@ import feedbacks from "../utils/feedbacks";
 
 export const Feedback = () => {
   return (
-    <div className="bg-dark-blue-2 px-5 pb-[60%] ">
+    <div className="bg-dark-blue-2 px-5 h-[50em]  laptop:h-[30em] laptop:px-[5%]">
       <img src={quotesICON} className="w-8 ml-3" alt="quotes-icon" />
-      <div className="flex flex-col gap-7">
+      <div className="flex flex-col gap-7 laptop:grid laptop:grid-cols-3">
         {feedbacks.map((feedback) => (
           <motion.div
             initial={{ y: "-2em", opacity: 0 }}

@@ -5,10 +5,14 @@ import arrowICON from "../assets/icon-arrow.svg";
 
 export const Productive = () => {
   return (
-    <div className="bg-dark-blue-2 px-5 py-32 flex flex-col gap-20 items-center">
-      <img src={bannerIMG} alt="banner-productive" className="w-80" />
-      <div className="flex flex-col gap-5 items-center text-neutral-white p-1">
-        <h1 className="font-raleway font-bold  text-xl">
+    <div className="bg-dark-blue-2 px-5 py-32 flex flex-col gap-20 items-center laptop:grid laptop:grid-cols-2 laptop:px-[10%]">
+      <img
+        src={bannerIMG}
+        alt="banner-productive"
+        className="w-80 laptop:w-[90%]"
+      />
+      <div className="flex flex-col gap-5 items-center text-neutral-white p-1 laptop:items-start ">
+        <h1 className="font-raleway font-bold text-xl laptop:text-4xl ">
           Stay productive, wherever you are
         </h1>
         <p className="font-raleway ">
