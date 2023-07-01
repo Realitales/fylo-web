@@ -9,7 +9,7 @@ import illustration1 from "/assets/illustration-intro.png";
 
 export const Landing = () => {
   return (
-    <div className="hero flex flex-col overflow-hidden pb-5 laptop:h-screen">
+    <div className="hero flex flex-col overflow-hidden laptop:h-screen ">
       <Navbar />
       <img
         src={illustration1}
