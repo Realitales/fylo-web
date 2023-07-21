@@ -12,7 +12,10 @@ export const Navbar = () => {
       <ul className="flex gap-5 text-xs tablet:text-sm laptop:text-sm laptop:gap-16 ">
         {routes.map((route) => {
           return (
-            <li key={route.path} className="cursor-pointer">
+            <li
+              key={route.path}
+              className="cursor-pointer  hover:border-b-neutral-white hover:border-b-2 hover:font-bold"
+            >
               {route.name}
             </li>
           );
