@@ -43,31 +43,41 @@ export const Footer = () => {
   return (
     <>
       <FooterCard />
-      <div className="bg-dark-blue-3 px-8 font-open-sans pt-72 laptop:grid laptop:grid-cols-5 ">
+      <div className="bg-dark-blue-3 px-8 font-open-sans pt-72 laptop:grid laptop:grid-cols-5 pb-10 laptop:px-36">
         <img src={logo} alt="fylo-logo" className="w-44 laptop:col-span-5" />
 
-        <div className="text-neutral-white text-sm  mt-9 mr-5 flex flex-col gap-5 laptop:grid laptop:grid-flow-dense laptop:grid-cols-2 ">
-          <div className="flex gap-6 laptop:row-span-2 laptop:w-[50%]">
+        <div className="text-neutral-white text-sm  mt-9 mr-5 flex flex-col gap-5 laptop:grid laptop:grid-cols-2 laptop:col-span-3 laptop:gap-24 ">
+          <div className="flex gap-6 laptop:row-span-2 ">
             <img
               src={locationICON}
               alt="location-icon"
-              className="w-4 h-full laptop:h-[2em] laptop:w-5"
+              className="w-4 h-full laptop:h-[1.5em] laptop:w-5"
             />
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua
             </p>
           </div>
-          <div className="flex gap-6">
-            <img src={phoneICON} alt="phone-icon" className="w-4 h-full" />
-            <p>+1-543-123-4567</p>
-          </div>
-          <div className="flex gap-6">
-            <img src={emailICON} alt="email-icon" className="w-4 h-full" />
-            <p>example@fylo.com</p>
+          <div className="">
+            <div className="flex gap-6 ">
+              <img
+                src={phoneICON}
+                alt="phone-icon"
+                className="w-4 h-full laptop:h-[10%] laptop:w-4"
+              />
+              <p>+1-543-123-4567</p>
+            </div>
+            <div className="flex gap-6 laptop:mt-5">
+              <img
+                src={emailICON}
+                alt="email-icon"
+                className="w-4 h-full laptop:h-[10%] laptop:w-4"
+              />
+              <p>example@fylo.com</p>
+            </div>
           </div>
         </div>
-        <div className="flex flex-col gap-14 mt-20 text-neutral-white">
+        <div className="flex flex-col gap-14 mt-20 text-neutral-white laptop:mt-8 laptop:grid-cols-2 laptop:grid laptop:col-span-1">
           <div className="flex flex-col gap-5">
             <a href="#">About us</a>
             <a href="#">Jobs</a>
@@ -80,7 +90,7 @@ export const Footer = () => {
             <a href="#">Privacy</a>
           </div>
         </div>
-        <div className="flex gap-5 p-10 justify-center">
+        <div className="flex gap-5 p-10 justify-center laptop:h-fit">
           <a
             href="#"
             className="border-neutral-white border-solid border-2 p-2 rounded-full"
