@@ -12,7 +12,8 @@ export const Button = ({ children, className }: ButtonProps) => {
       initial={{ y: "-5em", opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ type: "spring", stiffness: 70 }}
-      className={`${className} font-raleway  font-bold text-sm bg-gradient-to-r from-accent-cyan to-accent-blue rounded-full  text-neutral-white`}
+      className={`${className} font-raleway  font-bold text-sm bg-gradient-to-r 
+      from-accent-cyan to-accent-blue rounded-full  text-neutral-white hover:to-accent-cyan `}
     >
       {children}
     </motion.button>
