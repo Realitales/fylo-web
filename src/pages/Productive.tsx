@@ -1,16 +1,30 @@
 import React from "react";
+import { motion } from "framer-motion";
 
 import bannerIMG from "/assets/illustration-stay-productive.png";
 
 export const Productive = () => {
   return (
-    <div className="bg-dark-blue-2 px-5 py-32 flex flex-col gap-20 items-center laptop:grid laptop:grid-cols-2 laptop:px-[10%]">
-      <img
+    <div
+      className="bg-dark-blue-2 px-5 py-32 flex flex-col gap-20 items-center 
+    laptop:grid laptop:grid-cols-2 laptop:px-[10%]  overflow-auto"
+    >
+      <motion.img
         src={bannerIMG}
         alt="banner-productive"
         className="w-80 laptop:w-[90%]"
+        initial={{ x: -100, opacity: 0 }}
+        whileInView={{ x: 0, opacity: 1 }}
+        transition={{ ease: "easeInOut", duration: 0.6 }}
+        viewport={{ once: true }}
       />
-      <div className="flex flex-col gap-5 items-center text-neutral-white p-1 laptop:items-start ">
+      <motion.div
+        initial={{ x: 100, opacity: 0 }}
+        whileInView={{ x: 0, opacity: 1 }}
+        transition={{ ease: "easeInOut", duration: 0.6 }}
+        viewport={{ once: true }}
+        className="flex flex-col gap-5 items-center text-neutral-white p-1 laptop:items-start"
+      >
         <h1 className="font-raleway font-bold text-xl laptop:text-4xl ">
           Stay productive, wherever you are
         </h1>
@@ -69,7 +83,7 @@ export const Productive = () => {
             </g>
           </svg>
         </a>
-      </div>
+      </motion.div>
     </div>
   );
 };
