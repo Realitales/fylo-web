@@ -11,7 +11,10 @@ export const Landing = () => {
   return (
     <div className="hero flex flex-col overflow-hidden laptop:h-screen ">
       <Navbar />
-      <img
+      <motion.img
+        initial={{ y: "-5em", opacity: 0 }}
+        animate={{ y: 0, opacity: 1 }}
+        transition={{ type: "spring", stiffness: 70 }}
         src={illustration1}
         alt="illustration-1"
         className="w-80 self-center translate-x-[5%] mb-16 laptop:w-[33%] laptop:mb-5"
